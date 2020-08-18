@@ -1,0 +1,94 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+main {
+  height: 500px;
+  width: 1000px;
+  background-color: beige;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70pt;
+  top: -50px;
+  position: relative;
+}
+
+.name-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+span {
+  margin: 0 10px;
+  font-size: 30pt;
+}
+
+.current span {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  font-size: 70pt;
+}
+
+.current span:first-of-type {
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  position: absolute;
+  font-size: 30pt;
+}
+
+.current span:last-of-type:not(:first-child) {
+  cursor: pointer;
+}
+
+.buttons {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-140%);
+  display: flex;
+  justify-content: space-around;
+}
+
+.next-button,
+.previous-button {
+  border-radius: 15px;
+  background-color: lightgrey;
+  font-size: 30pt;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+aside {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  background-color: beige;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  width: 80%;
+}
+
+.absent-text {
+  font-size: 12pt !important;
+}
