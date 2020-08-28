@@ -4,11 +4,11 @@
 }
 
 main {
-  height: 500px;
+  height: 60vh;
   width: 1000px;
   background-color: beige;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   display: grid;
@@ -31,27 +31,28 @@ h1 {
 
 span {
   margin: 0 10px;
-  font-size: 30pt;
+  font-size: 20pt;
 }
 
 .current span {
   top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  right: 0;
+  transform: translateY(-50%);
   position: absolute;
-  font-size: 70pt;
+  font-size: 50pt;
 }
 
 .current span:first-of-type {
-  top: 50%;
   left: 10px;
-  transform: translateY(-50%);
-  position: absolute;
   font-size: 30pt;
 }
 
 .current span:last-of-type:not(:first-child) {
   cursor: pointer;
+  white-space: pre;
+  width: 72%;
+  text-align: center;
+  color: rgb(145, 17, 17);
 }
 
 .buttons {
@@ -75,7 +76,6 @@ span {
 
 aside {
   position: absolute;
-  right: 20px;
   top: 50%;
   transform: translateY(-50%);
   width: 300px;
@@ -84,6 +84,15 @@ aside {
   display: flex;
   flex-direction: column;
 }
+
+.right {
+  right: 20px;
+}
+
+.left {
+  left: 20px;
+}
+
 
 hr {
   width: 80%;

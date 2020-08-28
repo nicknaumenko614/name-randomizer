@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Randomizer</title>
-    <script src="./app.js" type="module"></script>
+    <script src="./js/app.js" type="module"></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <h1>Name Randomizer</h1>
+    <aside class="left">
+      <span>Class Roster</span>
+      <hr />
+    </aside>
+
     <main>
       <div class="buttons">
         <span class="previous-button">PREVIOUS</span>
@@ -20,14 +25,18 @@
       </div>
 
       <div class="name-box current">
-        <span>Current:<br /><h6 class="absent-text">click name to mark as absent</h6></span>
+        <span>Current:<br />
+          <h6 class="absent-text">click name to mark as absent</h6>
+        </span>
+        <div class="current-name">
+        </div>
       </div>
 
       <div class="name-box next">
         <span>Next:</span>
       </div>
     </main>
-    <aside>
+    <aside class="right">
       <span>Absent</span>
       <hr />
     </aside>

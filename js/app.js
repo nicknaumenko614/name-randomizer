@@ -1,9 +1,9 @@
-import { FileHelper } from "./FileHelper.js";
+import { FileHelper } from "./components/FileHelper.js";
 
 const previousContainer = document.querySelector(".previous");
 const currentContainer = document.querySelector(".current");
 const nextContainer = document.querySelector(".next");
-const absentContainer = document.querySelector("aside");
+const absentContainer = document.querySelector(".right");
 const previousButton = document.querySelector(".previous-button");
 const nextButton = document.querySelector(".next-button");
 
