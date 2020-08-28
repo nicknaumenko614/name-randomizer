@@ -52,6 +52,7 @@ span {
   white-space: pre;
   width: 72%;
   text-align: center;
+  padding-bottom: 50px;
   color: rgb(145, 17, 17);
 }
 
@@ -91,8 +92,9 @@ aside {
 
 .left {
   left: 20px;
+  max-height: 90vh;
+  overflow: scroll;
 }
-
 
 hr {
   width: 80%;
