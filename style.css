@@ -1,6 +1,9 @@
 * {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 main {
@@ -19,7 +22,6 @@ main {
 h1 {
   text-align: center;
   font-size: 70pt;
-  top: -50px;
   position: relative;
 }
 
@@ -52,7 +54,6 @@ span {
   white-space: pre;
   width: 72%;
   text-align: center;
-  padding-bottom: 50px;
   color: rgb(145, 17, 17);
 }
 
@@ -84,10 +85,12 @@ aside {
   text-align: center;
   display: flex;
   flex-direction: column;
+  padding: 10px 0;
 }
 
 .right {
   right: 20px;
+  min-height: 100px;
 }
 
 .left {
@@ -98,6 +101,7 @@ aside {
 
 hr {
   width: 80%;
+  margin: 5px 10%;
 }
 
 .absent-text {
