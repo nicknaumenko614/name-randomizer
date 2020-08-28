@@ -9,7 +9,15 @@ const nextButton = document.querySelector(".next-button");
 
 document.addEventListener("DOMContentLoaded", () => {
   const fileHelper = new FileHelper();
-  const names = fileHelper.pullTextFromFile("roster.txt").split("\r\n");
+  let names = [];
+  const isMac = navigator.platform.toUpperCase().indexOf("MAC")>=0;
+  const textFromFile = fileHelper.pullTextFromFile("roster.txt");
+  if (isMac) {
+    names = textFromFile.split ("\n");
+  } else {
+    names = textFromFile.split ("\r\n");
+  }
+  
   shuffle(names);
   addNamesToNextContainer(names);
 
